@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Hover effect on service titles only */
+        .tiles article h2 {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .tiles article a:hover h2 {
+            color: #59c3c3; /* Accent color */
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -25,6 +36,10 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Free Quote</a></li>
         </ul>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        </ul>
     </nav>
 
     <!-- Main -->
@@ -42,7 +57,7 @@
                 <a href="#">
                     <h2>Driveway Pressure Washing</h2>
                     <div class="content">
-                        <p>Starting at $99. Remove oil stains, dirt, and grime for a refreshed curb appeal.</p>
+                        <p>Starting at $99. Remove oil stains, dirt, mildew, and years of grime to make your driveway look brand new.</p>
                     </div>
                 </a>
             </article>
@@ -54,7 +69,7 @@
                 <a href="#">
                     <h2>Softwash Siding & Fences</h2>
                     <div class="content">
-                        <p>Gentle but effective cleaning for siding, fences, and delicate surfaces.</p>
+                        <p>Our low-pressure softwash method protects siding and fences while gently eliminating algae, mold, and dirt buildup.</p>
                     </div>
                 </a>
             </article>
@@ -66,7 +81,7 @@
                 <a href="#">
                     <h2>Trash Can Cleaning</h2>
                     <div class="content">
-                        <p>Eliminate odors and bacteria from your bins. Affordable add-on service.</p>
+                        <p>Prevent foul smells and bacteria growth with our high-temp trash bin cleaning. Great monthly or seasonal add-on!</p>
                     </div>
                 </a>
             </article>
@@ -78,7 +93,7 @@
                 <a href="#">
                     <h2>Custom Washing</h2>
                     <div class="content">
-                        <p>Have a unique project? We can handle it. Get a custom quote today.</p>
+                        <p>Got a boat dock, deck, retaining wall or something unique? We'll handle it. Reach out for a custom quote.</p>
                     </div>
                 </a>
             </article>
@@ -89,12 +104,12 @@
     <footer id="footer">
         <section class="split contact">
             <section class="alt">
-                <h3>Address</h3>
-                <p>[Your Business Address Here]</p>
+                <h3>Service Area</h3>
+                <p>Port St Lucie, Fort Pierce, Stuart, Palm City, Jupiter, Tequesta, West Palm, Vero Beach</p>
             </section>
             <section>
                 <h3>Phone</h3>
-                <p><a href="tel:1234567890">(123) 456-7890</a></p>
+                <p><a href="#">(Coming Soon)</a></p>
             </section>
             <section>
                 <h3>Email</h3>
@@ -102,6 +117,11 @@
             </section>
         </section>
     </footer>
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul><li>&copy; Action Power Washers</li></ul>
+    </div>
 
 </div>
 
