@@ -32,12 +32,12 @@
         }
 
         #header .logo img {
-            max-height: 4rem; /* smaller, responsive rem size */
-            width: auto;
+            max-height: 4rem !important;
+            width: auto !important;
             display: block;
-            object-fit: contain;
+            object-fit: contain !important;
             position: relative;
-            z-index: 1000; /* lower than nav */
+            z-index: 1000;
         }
 
         .header-cta {
@@ -85,7 +85,7 @@
             z-index: 3500 !important;
         }
 
-        /* Center copyright fully */
+        /* Copyright styling */
         #copyright-wrapper {
             width: 100%;
             padding: 1rem 0;
@@ -96,6 +96,7 @@
             text-align: center;
             font-size: 0.9rem;
             color: #666;
+            user-select: none;
         }
     </style>
 </head>
@@ -249,6 +250,7 @@
             text-align: center;
             font-size: 0.9rem;
             color: #666;
+            user-select: none;
         ">
             Copyright © 2025 Action Power Washers. All Rights Reserved.
         </div>
