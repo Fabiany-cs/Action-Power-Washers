@@ -4750,6 +4750,22 @@ input, select, textarea {
 
 
 
+/* Make sure header is above video and clickable */
+#header {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+/* Just to be safe, make sure buttons are clickable */
+#header .button {
+    pointer-events: auto;
+    z-index: 10;
+}
 
 
+/* Only show the mobile menu toggle on small screens */
+.menu-toggle {
+    display: none;
+}
 
