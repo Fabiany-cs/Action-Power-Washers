@@ -4769,3 +4769,11 @@ input, select, textarea {
     display: none;
 }
 
+#header .logo img {
+    max-height: 90px;   /* Try 90px or 100px */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
