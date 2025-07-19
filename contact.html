@@ -32,7 +32,7 @@
         }
 
         #header .logo img {
-            max-height: 4.375rem; /* 70px relative to root font size */
+            max-height: 4rem; /* smaller with rem for responsiveness */
             width: auto;
             display: block;
             object-fit: contain;
@@ -167,8 +167,16 @@
     </footer>
 
     <!-- Copyright -->
-    <div id="copyright" style="text-align:center; margin: 2rem 0;">
-        <ul><li>Copyright © 2025 - All Rights Reserved. Action Power Washers</li></ul>
+    <div id="copyright-wrapper" style="width: 100%; padding: 1rem 0;">
+        <div id="copyright" style="
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        ">
+            Copyright © 2025 Action Power Washers. All Rights Reserved.
+        </div>
     </div>
 
 </div>
