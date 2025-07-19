@@ -36,6 +36,8 @@
             width: auto;
             display: block;
             object-fit: contain;
+            position: relative;      /* Added to control z-index */
+            z-index: 1000;           /* Lower than nav */
         }
 
         .header-cta {
@@ -68,6 +70,19 @@
             color: #000;
             text-align: left;
             font-size: 0.95rem;
+        }
+
+        /* Fix hamburger overlap on mobile */
+        #nav {
+            position: relative !important;
+            z-index: 3000 !important;
+        }
+        
+        /* If your hamburger menu button has a specific class/id, add it here */
+        #nav .menu-button,
+        #nav .hamburger {
+            position: relative;
+            z-index: 3500 !important;
         }
     </style>
 </head>
