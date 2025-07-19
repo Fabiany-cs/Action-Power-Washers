@@ -6,6 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      .center {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #444;
+      }
+
+      video {
+        width: 100%;
+        border-radius: 12px;
+        max-height: 400px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .tiles article img {
+        transition: transform 0.3s ease;
+      }
+
+      .tiles article:hover img {
+        transform: scale(1.02);
+      }
+
+      .before-after-pair {
+        margin-bottom: 2.5rem;
+      }
+
+      .pair-title {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: #222;
+      }
+
+      .pair-images {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .image-wrapper {
+        position: relative;
+        flex: 1 1 300px;
+        max-width: 500px;
+      }
+
+      .image-wrapper img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .image-wrapper .label {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+      }
+    </style>
   </head>
   <body class="is-preload">
 
@@ -38,26 +105,46 @@
           <p>Before & After | Real Results | Local Work</p>
         </header>
 
-        <!-- Image Grid -->
-        <section class="tiles">
-          <article class="style1">
-            <span class="image fit"><img src="images/gallery1.jpg" alt="Driveway before and after" /></span>
-          </article>
-          <article class="style2">
-            <span class="image fit"><img src="images/gallery2.jpg" alt="Trash can cleaning" /></span>
-          </article>
-          <article class="style3">
-            <span class="image fit"><img src="images/gallery3.jpg" alt="Fence cleaning" /></span>
-          </article>
-          <article class="style4">
-            <span class="image fit"><img src="images/gallery4.jpg" alt="Siding softwash" /></span>
-          </article>
-          <article class="style1">
-            <span class="image fit"><img src="images/gallery5.jpg" alt="Patio cleanup" /></span>
-          </article>
-          <article class="style2">
-            <span class="image fit"><img src="images/gallery6.jpg" alt="Custom washing job" /></span>
-          </article>
+        <!-- Before & After Grid -->
+        <section>
+          <h2>Before & After Results</h2>
+
+          <div class="before-after-pair">
+            <h3 class="pair-title">Driveway Cleaning</h3>
+            <div class="pair-images">
+              <div class="image-wrapper">
+                <img src="images/before1.jpg" alt="Before driveway" />
+                <div class="label">Before</div>
+              </div>
+              <div class="image-wrapper">
+                <img src="images/after1.jpg" alt="After driveway" />
+                <div class="label">After</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="before-after-pair">
+            <h3 class="pair-title">Oil Stain Removal</h3>
+            <div class="pair-images">
+              <div class="image-wrapper">
+                <img src="images/before2.jpg" alt="Before oil stain" />
+                <div class="label">Before</div>
+              </div>
+              <div class="image-wrapper">
+                <img src="images/after2.jpg" alt="After oil stain" />
+                <div class="label">After</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Video Reel -->
+        <section style="margin-top: 3rem;">
+          <h2>In Action</h2>
+          <video autoplay muted loop playsinline>
+            <source src="videos/reel.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </section>
       </div>
 
