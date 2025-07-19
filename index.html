@@ -7,6 +7,32 @@
     <link rel="icon" type="image/png" href="images/favicon1.png">
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Service area two-column bullet list */
+        .service-area-columns {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+            padding-left: 0;
+        }
+        .service-area-columns ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            margin: 0;
+            color: #000;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        /* Center copyright text */
+        #copyright {
+            text-align: center;
+            margin: 2rem 0;
+            color: #000;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -95,7 +121,20 @@
             <section class="split contact">
                 <section class="alt">
                     <h3>Service Area</h3>
-                    <p>Port St Lucie, Fort Pierce, Stuart, Palm City, Jupiter, Tequesta, West Palm, Vero Beach</p>
+                    <div class="service-area-columns">
+                        <ul>
+                            <li>Port St Lucie</li>
+                            <li>Fort Pierce</li>
+                            <li>Stuart</li>
+                            <li>Palm City</li>
+                        </ul>
+                        <ul>
+                            <li>Jupiter</li>
+                            <li>Tequesta</li>
+                            <li>West Palm</li>
+                            <li>Vero Beach</li>
+                        </ul>
+                    </div>
                 </section>
                 <section>
                     <h3>Phone</h3>
@@ -110,7 +149,7 @@
 
         <!-- Copyright -->
         <div id="copyright">
-            <ul><li>&copy; Action Power Washers</li></ul>
+            <ul><li>Copyright © 2025 - All Rights Reserved. Action Power Washers</li></ul>
         </div>
 
     </div>
