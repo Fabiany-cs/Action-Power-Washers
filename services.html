@@ -13,15 +13,23 @@
         }
 
         .tiles article a:hover h2 {
-            color: #59c3c3; /* Accent color */
+            color: #59c3c3;
             transform: scale(1.05);
+        }
+
+        /* Fancy gradient separator */
+        .fancy-separator {
+            height: 2px;
+            margin: 2.5rem 0;
+            background: linear-gradient(to right, transparent, #59c3c3, transparent);
+            border-radius: 4px;
         }
     </style>
 </head>
 <body class="is-preload">
 
 <!-- Wrapper -->
-<div id="wrapper">
+<div id="wrapper" class="fade-in">
 
     <!-- Header -->
     <header id="header">
@@ -51,20 +59,22 @@
 
         <section class="tiles">
             <article class="style1">
-                <span class="image">
-                    <img src="images/service-driveway.jpg" alt="Driveway Pressure Washing" />
+                <span class="image fit">
+                    <img src="images/driveway.jpg" alt="Driveway Pressure Washing" />
                 </span>
                 <a href="#">
                     <h2>Driveway Pressure Washing</h2>
                     <div class="content">
-                        <p>Starting at $99. Remove oil stains, dirt, mildew, and years of grime to make your driveway look brand new.</p>
+                        <p>Starting at $99. Blast away years of built-up oil stains, dirt, mildew, and grime to instantly boost curb appeal and make your driveway look like new.</p>
                     </div>
                 </a>
             </article>
 
+            <div class="fancy-separator"></div>
+
             <article class="style2">
-                <span class="image">
-                    <img src="images/service-softwash.jpg" alt="Softwash Services" />
+                <span class="image fit">
+                    <img src="images/soft.jpg" alt="Softwash Services" />
                 </span>
                 <a href="#">
                     <h2>Softwash Siding & Fences</h2>
@@ -74,21 +84,39 @@
                 </a>
             </article>
 
+            <div class="fancy-separator"></div>
+
             <article class="style3">
-                <span class="image">
-                    <img src="images/service-trashcan.jpg" alt="Trash Can Cleaning" />
+                <span class="image fit">
+                    <img src="images/garbage_clean.jpg" alt="Trash Can Cleaning" />
                 </span>
                 <a href="#">
                     <h2>Trash Can Cleaning</h2>
                     <div class="content">
-                        <p>Prevent foul smells and bacteria growth with our high-temp trash bin cleaning. Great monthly or seasonal add-on!</p>
+                        <p>Starting at $30. Eliminate foul odors, germs, and bacteria from your bins with our high-temp sanitation. Great as a monthly or seasonal add-on for a cleaner home environment.</p>
                     </div>
                 </a>
             </article>
 
+            <div class="fancy-separator"></div>
+
+            <article class="style5">
+                <span class="image fit">
+                    <img src="images/gutter_cleaning.jpg" alt="Gutter Cleaning" />
+                </span>
+                <a href="#">
+                    <h2>Gutter Cleaning</h2>
+                    <div class="content">
+                        <p>Starting at $79. Keep rainwater flowing freely by removing leaves and debris. Prevent water damage, mold growth, and roof leaks before they start.</p>
+                    </div>
+                </a>
+            </article>
+
+            <div class="fancy-separator"></div>
+
             <article class="style4">
-                <span class="image">
-                    <img src="images/service-custom.jpg" alt="Custom Pressure Washing" />
+                <span class="image fit">
+                    <img src="images/pressurewash.jpg" alt="Custom Pressure Washing" />
                 </span>
                 <a href="#">
                     <h2>Custom Washing</h2>
