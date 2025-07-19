@@ -26,11 +26,31 @@
             text-align: left;
             font-size: 0.95rem;
         }
-        /* Center copyright text */
+
+        /* Copyright styling for full centering */
+        #copyright-wrapper {
+            width: 100%;
+            padding: 1rem 0;
+            background: transparent;
+        }
+
         #copyright {
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
-            margin: 2rem 0;
-            color: #000;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Fix for nav links not clickable */
+        #header.sticky-header,
+        #nav {
+          position: relative;
+          z-index: 1000; /* make sure header and nav are on top */
+        }
+        #intro-video,
+        #intro .intro-content {
+          pointer-events: none; /* let clicks pass through the video and intro content */
         }
     </style>
 </head>
@@ -148,8 +168,10 @@
         </footer>
 
         <!-- Copyright -->
-        <div id="copyright">
-            <ul><li>Copyright © 2025 - All Rights Reserved. Action Power Washers</li></ul>
+        <div id="copyright-wrapper">
+            <div id="copyright">
+                Copyright © 2025 Action Power Washers. All Rights Reserved.
+            </div>
         </div>
 
     </div>
