@@ -15,7 +15,7 @@
         /* Header styling */
         #header {
             position: relative;
-            z-index: 10;
+            z-index: 1500;
             pointer-events: auto;
             padding: 2rem 0 1rem 0; /* top and bottom padding */
         }
@@ -36,6 +36,8 @@
             width: auto;
             display: block;
             object-fit: contain;
+            position: relative;
+            z-index: 1000;
         }
 
         .header-cta {
@@ -135,6 +137,12 @@
             padding: 5px 10px;
             font-size: 0.9rem;
             border-radius: 6px;
+        }
+
+        /* Fix hamburger menu overlap */
+        #nav {
+            position: relative;
+            z-index: 2000 !important;
         }
     </style>
 </head>
