@@ -12,22 +12,62 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     
     <style>
-        /* Hover effect on service titles only */
-        .tiles article h2 {
-            transition: color 0.3s ease, transform 0.3s ease;
+        /* Header styling */
+        #header {
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
+            padding: 2rem 0 1rem 0; /* top and bottom padding */
         }
 
-        .tiles article a:hover h2 {
-            color: #59c3c3;
-            transform: scale(1.05);
+        #header .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
         }
 
-        /* Fancy gradient separator */
-        .fancy-separator {
-            height: 2px;
-            margin: 2.5rem 0;
-            background: linear-gradient(to right, transparent, #59c3c3, transparent);
-            border-radius: 4px;
+        #header .logo img {
+            max-height: 90px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Extra space under header to prevent nav bar overlap */
+        #header + #nav {
+            margin-top: 1.5rem;
+        }
+
+        /* Two-column bullet list for service area */
+        .service-area-columns {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+            padding-left: 0;
+        }
+
+        .service-area-columns ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            margin: 0;
+            color: #000;
+            text-align: left;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -39,7 +79,15 @@
 
     <!-- Header -->
     <header id="header">
-        <a href="index.html" class="logo">Action Power Washers</a>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/banner.png" alt="Action Power Washers Logo" />
+            </a>
+            <div class="header-cta">
+                <a href="tel:7722062431" class="button small">📞 Call Us: (772) 206-2431</a>
+                <a href="contact.html" class="button small primary">💬 Get a Free Quote</a>
+            </div>
+        </div>
     </header>
 
     <!-- Nav -->
@@ -139,11 +187,24 @@
         <section class="split contact">
             <section class="alt">
                 <h3>Service Area</h3>
-                <p>Port St Lucie, Fort Pierce, Stuart, Palm City, Jupiter, Tequesta, West Palm, Vero Beach</p>
+                <div class="service-area-columns">
+                    <ul>
+                        <li>Port St Lucie</li>
+                        <li>Fort Pierce</li>
+                        <li>Stuart</li>
+                        <li>Palm City</li>
+                    </ul>
+                    <ul>
+                        <li>Jupiter</li>
+                        <li>Tequesta</li>
+                        <li>West Palm</li>
+                        <li>Vero Beach</li>
+                    </ul>
+                </div>
             </section>
             <section>
                 <h3>Phone</h3>
-                <p><a href="#">(772) 206-2431</a></p>
+                <p><a href="tel:7722062431">(772) 206-2431</a></p>
             </section>
             <section>
                 <h3>Email</h3>
@@ -153,8 +214,8 @@
     </footer>
 
     <!-- Copyright -->
-    <div id="copyright">
-        <ul><li>&copy; Action Power Washers</li></ul>
+    <div id="copyright" style="text-align:center; margin: 2rem 0;">
+        <ul><li>Copyright © 2025 - All Rights Reserved. Action Power Washers</li></ul>
     </div>
 
 </div>
