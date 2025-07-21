@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        /* Service area two-column bullet list */
+        /* Two-column bullet list for service area */
         .service-area-columns {
             display: flex;
             gap: 3rem;
             justify-content: center;
             flex-wrap: wrap;
             max-width: 600px;
-            margin: 0 auto 1.5rem auto;
+            margin: 0 auto 1.5rem;
             padding-left: 0;
         }
         .service-area-columns ul {
@@ -23,9 +23,10 @@
             padding-left: 1.25rem;
             margin: 0;
             color: #000;
-            text-align: left;
             font-size: 0.95rem;
+            text-align: left;
         }
+
         /* Center copyright text */
         #copyright-wrapper {
             width: 100%;
@@ -40,22 +41,40 @@
             user-select: none;
         }
 
-        /* Fix for nav links not clickable */
+        /* Ensure nav/header are on top */
         #header.sticky-header,
         #nav {
-          position: relative;
-          z-index: 1000; /* make sure header and nav are on top */
-        }
-        #intro-video,
-        #intro .intro-content {
-          pointer-events: none; /* let clicks pass through the video and intro content */
+            position: relative;
+            z-index: 1000;
         }
 
-        /* Consistent header logo size */
+        /* Prevent clicks passing through */
+        #intro-video,
+        #intro .intro-content {
+            pointer-events: none;
+        }
+
+        /* Logo sizing */
         #header .logo img {
             max-height: 4rem !important;
             width: auto !important;
             object-fit: contain !important;
+        }
+
+        /* Intro text styling */
+        .intro-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            color: #ffffff;
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        #intro img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -71,9 +90,9 @@
                 Your browser does not support the video tag.
             </video>
             <div class="intro-content">
-                <img src="images/banner.png" alt="Action Power Washers Logo" style="max-width: 100%; height: auto;" />
+                <img src="images/banner.png" alt="Action Power Washers Logo" />
                 <p>Professional pressure washing services for homes, driveways, patios, fences, and more.</p>
-                <p>Licensed & Insured | Free Estimates | Satisfaction Guaranteed</p>
+                <p>Licensed &amp; Insured | Free Estimates | Satisfaction Guaranteed</p>
                 <p><strong>Locally Owned. Professionally Cleaned.</strong></p>
                 <ul class="actions">
                     <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
@@ -88,7 +107,7 @@
                     <img src="images/banner.png" alt="Action Power Washers Logo" />
                 </a>
                 <div class="header-cta">
-                    <a href="tel:7722062431" class="button small">📞 Call Us: (772) 206-2431</a>
+                    <a href="tel:7722062431" class="button small primary">📞 Call Us: (772) 206-2431</a>
                     <a href="contact.html" class="button small primary">💬 Get a Free Quote</a>
                 </div>
             </div>
@@ -116,7 +135,7 @@
                 <header class="major">
                     <h2><a href="#" onclick="event.preventDefault();">Dirt Doesn’t Stand a Chance.</a></h2>
                     <p>We specialize in restoring your property's curb appeal. No job is too big or too small. Schedule your free quote today!</p>
-                    <p>Residential & Commercial</p>
+                    <p>Residential &amp; Commercial</p>
                 </header>
                 <a href="#" class="image main"><img src="images/pic01.jpg" alt="Pressure Washing" /></a>
                 <ul class="actions special">
@@ -173,15 +192,8 @@
         </footer>
 
         <!-- Copyright -->
-        <div id="copyright-wrapper" style="width: 100%; padding: 1rem 0;">
-            <div id="copyright" style="
-                max-width: 1200px;
-                margin: 0 auto;
-                text-align: center;
-                font-size: 0.9rem;
-                color: #666;
-                user-select: none;
-            ">
+        <div id="copyright-wrapper">
+            <div id="copyright">
                 Copyright © 2025 Action Power Washers. All Rights Reserved.
             </div>
         </div>
