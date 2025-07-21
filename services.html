@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+        /* Header and nav styles matching gallery.html */
         #header {
             position: relative;
-            z-index: 10;
+            z-index: 1500;
             pointer-events: auto;
             padding: 2rem 0 1rem 0;
         }
-
         #header .container {
             display: flex;
             flex-direction: column;
@@ -25,34 +25,33 @@
             margin: 0 auto;
             text-align: center;
         }
-
         #header .logo img {
             max-height: 4rem !important;
             width: auto !important;
-            display: block;
             object-fit: contain !important;
             position: relative;
             z-index: 1000;
         }
-
         .header-cta {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
             justify-content: center;
         }
-
+        #header + #nav {
+            margin-top: 1.5rem;
+        }
         #nav {
             position: relative !important;
             z-index: 3000 !important;
         }
-
         #nav .menu-button,
         #nav .hamburger {
             position: relative;
             z-index: 3500 !important;
         }
 
+        /* Service area columns */
         .service-area-columns {
             display: flex;
             gap: 3rem;
@@ -62,7 +61,6 @@
             margin: 0 auto 1.5rem auto;
             padding-left: 0;
         }
-
         .service-area-columns ul {
             list-style-type: disc;
             padding-left: 1.25rem;
@@ -71,12 +69,11 @@
             text-align: left;
             font-size: 0.95rem;
         }
-
+        /* Footer copyright */
         #copyright-wrapper {
             width: 100%;
             padding: 1rem 0;
         }
-
         #copyright {
             max-width: 1200px;
             margin: 0 auto;
