@@ -128,6 +128,16 @@
             color: #666;
             padding: 0 1rem;
         }
+        /* Active nav styling */
+        #nav ul.links li.active {
+            background-color: #ffffff;
+        }
+        #nav ul.links li.active a {
+            color: #1e252d;
+        }
+        #nav ul.links li.active a:hover {
+            color: #18bfef !important;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -151,12 +161,26 @@
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li class="active"><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Free Quote</a></li>
             </ul>
             <ul class="icons">
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li>
+                    <a href="https://www.facebook.com/people/Action-Power-Washers/61578698219811/" 
+                       class="icon brands fa-facebook-f" 
+                       target="_blank" 
+                       rel="noopener">
+                        <span class="label">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://share.google/YfIkvFH7OtlILSKh7" 
+                       class="icon brands fa-google"
+                       target="_blank"
+                       rel="noopener">
+                        <span class="label">Google</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -258,5 +282,19 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Auto-highlight current nav link -->
+    <script>
+      (function(){
+        const path = window.location.pathname.split("/").pop();
+        document.querySelectorAll("#nav ul.links li a").forEach(a => {
+          if(a.getAttribute("href") === path) {
+            a.parentElement.classList.add("active");
+          } else {
+            a.parentElement.classList.remove("active");
+          }
+        });
+      })();
+    </script>
 </body>
 </html>
