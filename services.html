@@ -93,6 +93,19 @@
         #nav ul.links li.active a:hover {
             color: #18bfef !important;
         }
+
+        /* Blue breakline between service articles */
+        .tiles article {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #cce6ff; /* subtle light blue */
+        }
+        /* Remove bottom border from last article */
+        .tiles article:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -183,6 +196,17 @@
                         <h2>Gutter Cleaning</h2>
                         <div class="content">
                             <p>Starting at $79. Keep rainwater flowing freely by removing leaves and debris. Prevent water damage, mold growth, and roof leaks before they start.</p>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Added Paver Sealant service -->
+                <article class="style6">
+                    <span class="image fit"><img src="images/paver_sealant.png" alt="Paver Sealant" /></span>
+                    <a href="#">
+                        <h2>Paver Sealant</h2>
+                        <div class="content">
+                            <p>Protect and enhance your pavers with our professional sealant application. Increases durability and keeps colors vibrant.</p>
                         </div>
                     </a>
                 </article>
