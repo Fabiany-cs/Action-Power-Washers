@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        /* Two-column bullet list for service area */
         .service-area-columns {
             display: flex;
             gap: 3rem;
@@ -26,8 +25,6 @@
             font-size: 0.95rem;
             text-align: left;
         }
-
-        /* Center copyright text */
         #copyright-wrapper {
             width: 100%;
             padding: 1rem 0;
@@ -40,28 +37,20 @@
             color: #666;
             user-select: none;
         }
-
-        /* Ensure nav/header are on top */
         #header.sticky-header,
         #nav {
             position: relative;
             z-index: 1000;
         }
-
-        /* Prevent clicks passing through */
         #intro-video,
         #intro .intro-content {
             pointer-events: none;
         }
-
-        /* Logo sizing */
         #header .logo img {
             max-height: 4rem !important;
             width: auto !important;
             object-fit: contain !important;
         }
-
-        /* Intro text styling */
         .intro-content {
             position: relative;
             z-index: 2;
@@ -80,133 +69,145 @@
 </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
 
-        <!-- Intro -->
-        <div id="intro">
-            <video autoplay muted loop playsinline id="intro-video">
-                <source src="/videos/reel.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="intro-content">
-                <img src="images/new_logo_bgremoved.png" alt="Action Power Washers Logo" />
-                <p>Professional pressure washing services for homes, driveways, patios, fences, and more.</p>
-                <p>Licensed &amp; Insured | Free Estimates | Satisfaction Guaranteed</p>
-                <p><strong>Locally Owned. Professionally Cleaned.</strong></p>
-                <ul class="actions">
-                    <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
-                </ul>
+    <!-- Intro -->
+    <div id="intro">
+        <video autoplay muted loop playsinline id="intro-video">
+            <source src="/videos/reel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="intro-content">
+            <img src="images/new_logo_bgremoved.png" alt="Action Power Washers Logo" />
+            <p>Professional pressure washing services for homes, driveways, patios, fences, and more.</p>
+            <p>Licensed &amp; Insured | Free Estimates | Satisfaction Guaranteed</p>
+            <p><strong>Locally Owned. Professionally Cleaned.</strong></p>
+            <!-- Arrow removed here -->
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="sticky-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/banner.png" alt="Action Power Washers Logo" />
+            </a>
+            <div class="header-cta">
+                <a href="tel:7722062431" class="button small primary">📞 Call Us: (772) 206-2431</a>
+                <a href="contact.html" class="button small primary">💬 Get a Free Quote</a>
             </div>
         </div>
+    </header>
 
-        <!-- Header -->
-        <header id="header" class="sticky-header">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="images/banner.png" alt="Action Power Washers Logo" />
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Free Quote</a></li>
+        </ul>
+        <ul class="icons">
+            <li>
+                <a href="https://www.facebook.com/people/Action-Power-Washers/61578698219811/" 
+                class="icon brands fa-facebook-f" 
+                target="_blank" 
+                rel="noopener">
+                    <span class="label">Facebook</span>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:7722062431" class="button small primary">📞 Call Us: (772) 206-2431</a>
-                    <a href="contact.html" class="button small primary">💬 Get a Free Quote</a>
-                </div>
-            </div>
-        </header>
+            </li>
+            <li>
+                <a href="https://share.google/YfIkvFH7OtlILSKh7" 
+                class="icon brands fa-google"
+                target="_blank"
+                rel="noopener">
+                    <span class="label">Google</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Free Quote</a></li>
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Featured Section -->
+        <article class="post featured">
+            <header class="major">
+                <h2><a href="#" onclick="event.preventDefault();">Dirt Doesn’t Stand a Chance.</a></h2>
+                <p>We specialize in restoring your property's curb appeal. No job is too big or too small. Schedule your free quote today!</p>
+                <p>Residential &amp; Commercial</p>
+            </header>
+            <ul class="actions special">
+                <li><a href="contact.html" class="button large">Get a Free Quote</a></li>
             </ul>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        </article>
+
+        <!-- Google Review Section -->
+        <section class="post">
+            <header class="major">
+                <h2>Find Us On Google</h2>
+                <p>We aim for 100% customer satisfaction. If you've used our services, please leave us a review!</p>
+                <p style="font-size: 1.5em; color: gold;">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </p>
+            </header>
+            <ul class="actions special">
+                <li><a href="https://share.google/YfIkvFH7OtlILSKh7" class="button" target="_blank" rel="noopener">View on Google</a></li>
+                <li><a href="services.html" class="button">Our Services</a></li>
             </ul>
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- Featured Section -->
-            <article class="post featured">
-                <header class="major">
-                    <h2><a href="#" onclick="event.preventDefault();">Dirt Doesn’t Stand a Chance.</a></h2>
-                    <p>We specialize in restoring your property's curb appeal. No job is too big or too small. Schedule your free quote today!</p>
-                    <p>Residential &amp; Commercial</p>
-                </header>
-                <ul class="actions special">
-                    <li><a href="contact.html" class="button large">Get a Free Quote</a></li>
-                </ul>
-            </article>
-
-            <!-- Google Review Section -->
-            <section class="post">
-                <header class="major">
-                    <h2>Find Us On Google</h2>
-                    <p>We aim for 100% customer satisfaction. If you've used our services, please leave us a review!</p>
-                    <p style="font-size: 1.5em; color: gold;">
-                        &#9733; &#9733; &#9733; &#9733; &#9733;
-                    </p>
-                </header>
-                <ul class="actions special">
-                    <li><a href="#" class="button">View on Google</a></li>
-                    <li><a href="services.html" class="button">Our Services</a></li>
-                </ul>
-            </section>
-
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section class="split contact">
-                <section class="alt">
-                    <h3>Service Area</h3>
-                    <div class="service-area-columns">
-                        <ul>
-                            <li>Port St Lucie</li>
-                            <li>Fort Pierce</li>
-                            <li>Stuart</li>
-                            <li>Palm City</li>
-                        </ul>
-                        <ul>
-                            <li>Jupiter</li>
-                            <li>Tequesta</li>
-                            <li>West Palm</li>
-                            <li>Vero Beach</li>
-                        </ul>
-                    </div>
-                </section>
-                <section>
-                    <h3>Phone</h3>
-                    <p><a href="tel:7722062431">(772) 206-2431</a></p>
-                </section>
-                <section>
-                    <h3>Email</h3>
-                    <p><a href="mailto:contact@actionpowerwashers.com">contact@actionpowerwashers.com</a></p>
-                </section>
-            </section>
-        </footer>
-
-        <!-- Copyright -->
-        <div id="copyright-wrapper">
-            <div id="copyright">
-                Copyright © 2025 Action Power Washers. All Rights Reserved.
-            </div>
-        </div>
+        </section>
 
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer id="footer">
+        <section class="split contact">
+            <section class="alt">
+                <h3>Service Area</h3>
+                <div class="service-area-columns">
+                    <ul>
+                        <li>Port St Lucie</li>
+                        <li>Fort Pierce</li>
+                        <li>Stuart</li>
+                        <li>Palm City</li>
+                    </ul>
+                    <ul>
+                        <li>Jupiter</li>
+                        <li>Tequesta</li>
+                        <li>West Palm</li>
+                        <li>Vero Beach</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Phone</h3>
+                <p><a href="tel:7722062431">(772) 206-2431</a></p>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto:contact@actionpowerwashers.com">contact@actionpowerwashers.com</a></p>
+            </section>
+        </section>
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright-wrapper">
+        <div id="copyright">
+            Copyright © 2025 Action Power Washers. All Rights Reserved.
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
